@@ -1,0 +1,35 @@
+﻿@model IEnumerable<QLCB.Models.NhanVien>
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewData["Title"] = "Danh sách nhân viên";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Danh sách nhân viên</h2>
+
+<a asp-action="Create" class="btn btn-primary mb-3">Thêm nhân viên</a>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Mã NV</th>
+            <th>Họ tên</th>
+            <th>Lương</th>
+            <th>Hành động</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var nv in Model)
+        {
+            <tr>
+                <td>@nv.MaNhanVien</td>
+                <td>@nv.HoTen</td>
+                <td>@nv.Luong.ToString("N0")</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@nv.MaNhanVien" class="btn btn-sm btn-warning">Sửa</a>
+                    <a asp-action="Delete" asp-route-id="@nv.MaNhanVien" class="btn btn-sm btn-danger">Xóa</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

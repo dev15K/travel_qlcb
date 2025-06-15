@@ -1,0 +1,66 @@
+﻿@model QLCB.Models.ChuyenBay
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Create</h1>
+
+<h4>ChuyenBay</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="MaChuyenBay" class="control-label">Mã chuyến bay</label>
+                <input asp-for="MaChuyenBay" class="form-control" />
+                <span asp-validation-for="MaChuyenBay" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TenChuyenBay" class="control-label">Tên chuyến bay</label>
+                <input asp-for="TenChuyenBay" class="form-control" />
+                <span asp-validation-for="TenChuyenBay" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ThoiGianKhoiHanh" class="control-label">Thời gian khởi hành</label>
+                <input asp-for="ThoiGianKhoiHanh" class="form-control" />
+                <span asp-validation-for="ThoiGianKhoiHanh" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ThoiGianDen" class="control-label">Thời gian đến</label>
+                <input asp-for="ThoiGianDen" class="form-control" />
+                <span asp-validation-for="ThoiGianDen" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SoGhe" class="control-label">Số ghế</label>
+                <input asp-for="SoGhe" class="form-control" />
+                <span asp-validation-for="SoGhe" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MaMayBay" class="control-label">Mã máy bay</label>
+                <select asp-for="MaMayBay" class ="form-control" asp-items="ViewBag.MaMayBay"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="MaSanBayDi" class="control-label">Mã sân bay đi</label>
+                <select asp-for="MaSanBayDi" class ="form-control" asp-items="ViewBag.MaSanBayDi"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="MaSanBayDen" class="control-label">Mã sân bay đến</label>
+                <select asp-for="MaSanBayDen" class ="form-control" asp-items="ViewBag.MaSanBayDen"></select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

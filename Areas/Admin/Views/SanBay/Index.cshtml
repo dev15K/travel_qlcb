@@ -1,0 +1,41 @@
+﻿@model IEnumerable<QLCB.Models.SanBay>
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    ViewData["Title"] = "Danh sách sân bay";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Danh sách sân bay</h2>
+
+<p>
+    <a class="btn btn-primary mb-3" asp-area="Admin" asp-controller="SanBay" asp-action="Create">Thêm sân bay mới</a>
+
+</p>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Mã sân bay</th>
+            <th>Tên sân bay</th>
+            <th>Thành phố</th>
+            <th>Quốc gia</th>
+            <th>Thao tác</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.MaSanBay</td>
+                <td>@item.TenSanBay</td>
+                <td>@item.ThanhPho</td>
+                <td>@item.QuocGia</td>
+                <td>
+                    <a asp-area="Admin" asp-controller="SanBay" asp-action="Edit" asp-route-id="@item.MaSanBay" class="btn btn-sm btn-warning">Sửa</a>
+                    <a asp-area="Admin" asp-controller="SanBay" asp-action="Delete" asp-route-id="@item.MaSanBay" class="btn btn-sm btn-danger">Xóa</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

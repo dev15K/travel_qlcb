@@ -1,0 +1,73 @@
+﻿@model QLCB.Models.VeBay
+
+@{
+    ViewData["Title"] = "Create VeBay";
+}
+
+<h1>Create VeBay</h1>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label asp-for="MaVeBay" class="control-label"></label>
+        <input asp-for="MaVeBay" class="form-control" />
+        <span asp-validation-for="MaVeBay" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="MaChuyenBay" class="control-label"></label>
+        <input asp-for="MaChuyenBay" class="form-control" />
+        <span asp-validation-for="MaChuyenBay" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="MaHanhKhach" class="control-label"></label>
+        <input asp-for="MaHanhKhach" class="form-control" />
+        <span asp-validation-for="MaHanhKhach" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="NgayDatVe" class="control-label"></label>
+        <input asp-for="NgayDatVe" class="form-control" type="date" />
+        <span asp-validation-for="NgayDatVe" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="GiaVe" class="control-label"></label>
+        <input asp-for="GiaVe" class="form-control" type="number" step="0.01" />
+        <span asp-validation-for="GiaVe" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="MaNhanVien" class="control-label"></label>
+        <input asp-for="MaNhanVien" class="form-control" />
+        <span asp-validation-for="MaNhanVien" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="MaSanBayDi" class="control-label"></label>
+        <input asp-for="MaSanBayDi" class="form-control" />
+        <span asp-validation-for="MaSanBayDi" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="MaSanBayDen" class="control-label"></label>
+        <input asp-for="MaSanBayDen" class="form-control" />
+        <span asp-validation-for="MaSanBayDen" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="MaMayBay" class="control-label"></label>
+        <input asp-for="MaMayBay" class="form-control" />
+        <span asp-validation-for="MaMayBay" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="MaChungNhan" class="control-label"></label>
+        <input asp-for="MaChungNhan" class="form-control" />
+        <span asp-validation-for="MaChungNhan" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="MaPhanCong" class="control-label"></label>
+        <input asp-for="MaPhanCong" class="form-control" />
+        <span asp-validation-for="MaPhanCong" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Create</button>
+        <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+    </div>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

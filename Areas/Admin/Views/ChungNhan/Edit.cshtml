@@ -1,0 +1,44 @@
+﻿@model QLCB.Models.ChungNhan
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    ViewData["Title"] = "Chỉnh sửa chứng nhận";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<form asp-action="Edit">
+    <input type="hidden" asp-for="MaChungNhan" />
+
+    <div class="form-group">
+        <label>Tên chứng nhận</label>
+        <input asp-for="TenChungNhan" class="form-control" />
+        <span asp-validation-for="TenChungNhan" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label>Ngày cấp</label>
+        <input asp-for="NgayCap" class="form-control" type="date" />
+        <span asp-validation-for="NgayCap" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label>Ngày hết hạn</label>
+        <input asp-for="NgayHetHan" class="form-control" type="date" />
+        <span asp-validation-for="NgayHetHan" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label>Mã nhân viên</label>
+        <input asp-for="MaNhanVien" class="form-control" />
+        <span asp-validation-for="MaNhanVien" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Cập nhật</button>
+    <a asp-action="Index" class="btn btn-secondary">Quay lại</a>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

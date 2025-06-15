@@ -1,0 +1,26 @@
+﻿@model IEnumerable<QLCB.Models.PhanCong>
+
+@{
+    ViewData["Title"] = "Lịch phân công của tôi";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Mã chuyến bay</th>
+            <th>Ngày phân công</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.MaChuyenBay</td>
+                <td>@item.NgayPhanCong.ToString("dd/MM/yyyy")</td>
+            </tr>
+        }
+    </tbody>
+</table>

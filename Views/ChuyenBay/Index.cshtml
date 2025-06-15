@@ -1,0 +1,41 @@
+﻿@model IEnumerable<QLCB.Models.ChuyenBay>
+
+@{
+    ViewData["Title"] = "Danh sách chuyến bay";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Tạo chuyến bay mới</a>
+</p>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Mã</th>
+            <th>Tên</th>
+            <th>Khởi hành</th>
+            <th>Đến</th>
+            <th>Số ghế</th>
+            <th>Mã máy bay</th>
+            <th>Sân bay đi</th>
+            <th>Sân bay đến</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var cb in Model)
+        {
+            <tr>
+                <td>@cb.MaChuyenBay</td>
+                <td>@cb.TenChuyenBay</td>
+                <td>@cb.ThoiGianKhoiHanh.ToString("dd/MM/yyyy HH:mm")</td>
+                <td>@cb.ThoiGianDen.ToString("dd/MM/yyyy HH:mm")</td>
+                <td>@cb.SoGhe</td>
+                <td>@cb.MaMayBay</td> <!-- Chỉ hiện mã máy bay -->
+                <td>@cb.SanBayDi?.TenSanBay</td>
+                <td>@cb.SanBayDen?.TenSanBay</td>
+            </tr>
+        }
+    </tbody>
+</table>

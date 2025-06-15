@@ -1,0 +1,55 @@
+﻿@model IEnumerable<QLCB.Models.ViewModels.UserWithRoleViewModel>
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    ViewData["Title"] = "Quản lý người dùng";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Quản lý người dùng</h1>
+
+<p>
+    <a asp-area="Admin" asp-controller="User" asp-action="Create" class="btn btn-primary">Thêm người dùng mới</a>
+</p>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Vai trò hiện tại</th>
+            <th>Thay đổi vai trò</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.UserId</td>
+                <td>@user.Email</td>
+                <td>@user.Email</td>
+                <td>@user.CurrentRole</td>
+                <td>
+                    <form asp-area="Admin" asp-controller="User" asp-action="ChangeRole" method="post">
+                        <input type="hidden" name="userId" value="@user.UserId" />
+                        <select name="selectedRole" class="form-control d-inline-block w-auto">
+                            @foreach (var role in user.AllRoles)
+                            {
+                                <option value="@role" selected="@(role == user.CurrentRole ? "selected" : null)">
+                                    @role
+                                </option>
+                            }
+                        </select>
+                        <button type="submit" class="btn btn-sm btn-primary">Cập nhật vai trò</button>
+                    </form>
+                </td>
+                <td>
+                    <a asp-area="Admin" asp-controller="User" asp-action="Edit" asp-route-id="@user.UserId" class="btn btn-warning btn-sm">Sửa</a>
+                    <a asp-area="Admin" asp-controller="User" asp-action="Delete" asp-route-id="@user.UserId" class="btn btn-danger btn-sm">Xóa</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

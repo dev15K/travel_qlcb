@@ -1,0 +1,71 @@
+@model QLCB.Models.ChuyenBay
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    ViewData["Title"] = "Xóa chuyến bay";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Xóa chuyến bay</h1>
+
+<h3>Bạn có chắc chắn muốn xóa chuyến bay này không?</h3>
+<div>
+    <h4>Chuyến bay</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-3">
+            @Html.DisplayNameFor(model => model.MaChuyenBay)
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.MaChuyenBay)
+        </dd>
+        <dt class="col-sm-3">
+            @Html.DisplayNameFor(model => model.TenChuyenBay)
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.TenChuyenBay)
+        </dd>
+        <dt class="col-sm-3">
+            @Html.DisplayNameFor(model => model.ThoiGianKhoiHanh)
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.ThoiGianKhoiHanh)
+        </dd>
+        <dt class="col-sm-3">
+            @Html.DisplayNameFor(model => model.ThoiGianDen)
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.ThoiGianDen)
+        </dd>
+        <dt class="col-sm-3">
+            @Html.DisplayNameFor(model => model.SoGhe)
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.SoGhe)
+        </dd>
+        <dt class="col-sm-3">
+            @Html.DisplayNameFor(model => model.MayBay.LoaiMayBay)
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.MayBay.LoaiMayBay)
+        </dd>
+        <dt class="col-sm-3">
+            @Html.DisplayNameFor(model => model.SanBayDi.TenSanBay)
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.SanBayDi.TenSanBay)
+        </dd>
+        <dt class="col-sm-3">
+            @Html.DisplayNameFor(model => model.SanBayDen.TenSanBay)
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.SanBayDen.TenSanBay)
+        </dd>
+    </dl>
+
+    <form asp-area="Admin" asp-controller="ChuyenBay" asp-action="Delete" method="post">
+        <input type="hidden" asp-for="MaChuyenBay" />
+        <input type="submit" value="Xóa" class="btn btn-danger" />
+        <a asp-area="Admin" asp-controller="ChuyenBay" asp-action="Index" class="btn btn-secondary">Hủy</a>
+    </form>
+</div> 

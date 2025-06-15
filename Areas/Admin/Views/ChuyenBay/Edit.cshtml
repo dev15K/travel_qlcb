@@ -1,0 +1,58 @@
+﻿@model QLCB.Models.ChuyenBay
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    ViewData["Title"] = "Chỉnh sửa chuyến bay";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Chỉnh sửa chuyến bay</h1>
+
+<form asp-area="Admin" asp-controller="ChuyenBay" asp-action="Edit" method="post">
+    <input type="hidden" asp-for="MaChuyenBay" />
+
+    <div class="form-group">
+        <label asp-for="TenChuyenBay" class="control-label">Tên chuyến bay</label>
+        <input asp-for="TenChuyenBay" class="form-control" />
+        <span asp-validation-for="TenChuyenBay" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="MaMayBay" class="form-label"></label>
+        <select asp-for="MaMayBay" class="form-control" asp-items="@(new SelectList(ViewBag.MayBayList, "MaMayBay", "LoaiMayBay"))">
+            <option value="">-- Chọn máy bay --</option>
+        </select>
+        <span asp-validation-for="MaMayBay" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="MaSanBayDi" class="form-label"></label>
+        <select asp-for="MaSanBayDi" class="form-control" asp-items="@(new SelectList(ViewBag.SanBayDiList, "MaSanBay", "TenSanBay"))">
+            <option value="">-- Chọn sân bay đi --</option>
+        </select>
+        <span asp-validation-for="MaSanBayDi" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="MaSanBayDen" class="form-label"></label>
+        <select asp-for="MaSanBayDen" class="form-control" asp-items="@(new SelectList(ViewBag.SanBayDenList, "MaSanBay", "TenSanBay"))">
+            <option value="">-- Chọn sân bay đến --</option>
+        </select>
+        <span asp-validation-for="MaSanBayDen" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="ThoiGianKhoiHanh" class="control-label">Thời gian đi</label>
+        <input asp-for="ThoiGianKhoiHanh" class="form-control" type="datetime-local" />
+        <span asp-validation-for="ThoiGianKhoiHanh" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="ThoiGianDen" class="control-label">Thời gian đến</label>
+        <input asp-for="ThoiGianDen" class="form-control" type="datetime-local" />
+        <span asp-validation-for="ThoiGianDen" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <input type="submit" value="Lưu thay đổi" class="btn btn-primary" />
+        <a asp-area="Admin" asp-controller="ChuyenBay" asp-action="Index" class="btn btn-secondary">Hủy</a>
+    </div>
+</form>

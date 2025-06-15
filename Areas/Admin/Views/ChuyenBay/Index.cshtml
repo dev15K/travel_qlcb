@@ -1,0 +1,49 @@
+﻿@model IEnumerable<QLCB.Models.ChuyenBay>
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    ViewData["Title"] = "Danh sách chuyến bay";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Danh sách chuyến bay</h1>
+
+<p>
+    <a asp-area="Admin" asp-controller="ChuyenBay" asp-action="Create" class="btn btn-primary">Tạo chuyến bay mới</a>
+</p>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Mã chuyến bay</th>
+            <th>Tên chuyến bay</th>
+            <th>Thời gian khởi hành</th>
+            <th>Thời gian đến</th>
+            <th>Số ghế</th>
+            <th>Máy bay</th>
+            <th>Sân bay đi</th>
+            <th>Sân bay đến</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var cb in Model)
+        {
+            <tr>
+                <td>@cb.MaChuyenBay</td>
+                <td>@cb.TenChuyenBay</td>
+                <td>@cb.ThoiGianKhoiHanh.ToString("yyyy-MM-dd HH:mm")</td>
+                <td>@cb.ThoiGianDen.ToString("yyyy-MM-dd HH:mm")</td>
+                <td>@cb.SoGhe</td>
+                <td>@cb.MayBay?.LoaiMayBay</td>
+                <td>@cb.SanBayDi?.TenSanBay</td>
+                <td>@cb.SanBayDen?.TenSanBay</td>
+                <td>
+                    <a asp-area="Admin" asp-controller="ChuyenBay" asp-action="Details" asp-route-id="@cb.MaChuyenBay" class="btn btn-info btn-sm">Chi tiết</a>
+                    <a asp-area="Admin" asp-controller="ChuyenBay" asp-action="Edit" asp-route-id="@cb.MaChuyenBay" class="btn btn-warning btn-sm">Sửa</a>
+                    <a asp-area="Admin" asp-controller="ChuyenBay" asp-action="Delete" asp-route-id="@cb.MaChuyenBay" class="btn btn-danger btn-sm">Xóa</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,35 @@
+﻿@model QLCB.Models.PhanCong
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    ViewData["Title"] = "Cập nhật phân công";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="Id" />
+
+    <div class="form-group">
+        <label asp-for="MaChuyenBay" class="control-label"></label>
+        <input asp-for="MaChuyenBay" class="form-control" />
+        <span asp-validation-for="MaChuyenBay" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="MaNhanVien" class="control-label"></label>
+        <input asp-for="MaNhanVien" class="form-control" />
+        <span asp-validation-for="MaNhanVien" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="NgayPhanCong" class="control-label"></label>
+        <input asp-for="NgayPhanCong" class="form-control" type="date" />
+        <span asp-validation-for="NgayPhanCong" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Cập nhật</button>
+    <a asp-action="Index" class="btn btn-secondary">Hủy</a>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

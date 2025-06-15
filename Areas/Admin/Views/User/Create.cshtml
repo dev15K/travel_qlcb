@@ -1,0 +1,32 @@
+@model Microsoft.AspNetCore.Identity.IdentityUser
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    ViewData["Title"] = "Thêm người dùng mới";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Thêm người dùng mới</h1>
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-area="Admin" asp-controller="User" asp-action="Create" method="post">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Email"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label for="password">Mật khẩu</label>
+                <input type="password" name="password" class="form-control" required />
+            </div>
+            <button type="submit" class="btn btn-primary mt-3">Tạo</button>
+            <a asp-action="Index" class="btn btn-secondary mt-3">Hủy</a>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+} 

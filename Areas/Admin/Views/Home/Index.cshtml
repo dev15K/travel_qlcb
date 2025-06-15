@@ -1,0 +1,13 @@
+@{
+    ViewData["Title"] = "Admin Home Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Chào mừng đến với Trang quản trị</h1>
+    <div class="mt-4">
+        <a asp-area="Admin" asp-controller="ChuyenBay" asp-action="Index" class="btn btn-primary btn-lg">Quản lý Chuyến bay</a>
+        <a asp-area="Admin" asp-controller="User" asp-action="Index" class="btn btn-info btn-lg">Quản lý Người dùng</a>
+    </div>
+</div>
+ 

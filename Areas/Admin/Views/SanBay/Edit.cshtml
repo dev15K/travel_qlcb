@@ -1,0 +1,46 @@
+﻿@model QLCB.Models.SanBay
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Edit</h1>
+
+<h4>SanBay</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="MaSanBay" />
+            <div class="form-group">
+                <label asp-for="TenSanBay" class="control-label"></label>
+                <input asp-for="TenSanBay" class="form-control" />
+                <span asp-validation-for="TenSanBay" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ThanhPho" class="control-label"></label>
+                <input asp-for="ThanhPho" class="form-control" />
+                <span asp-validation-for="ThanhPho" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="QuocGia" class="control-label"></label>
+                <input asp-for="QuocGia" class="form-control" />
+                <span asp-validation-for="QuocGia" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
