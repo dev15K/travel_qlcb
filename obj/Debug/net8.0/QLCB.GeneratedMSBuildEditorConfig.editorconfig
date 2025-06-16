@@ -17,215 +17,215 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = QLCB
 build_property.RootNamespace = QLCB
-build_property.ProjectDir = /Users/ngoquangdai/Downloads/QLCB/QLCB/
+build_property.ProjectDir = D:\Works\Freelancer\Customer\travel_qlcb\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/ngoquangdai/Downloads/QLCB/QLCB
+build_property.MSBuildProjectDirectory = D:\Works\Freelancer\Customer\travel_qlcb
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/ngoquangdai/Downloads/QLCB/QLCB/Areas/Admin/Views/ChungNhan/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQ2h1bmdOaGFuL0NyZWF0ZS5jc2h0bWw=
+[D:/Works/Freelancer/Customer/travel_qlcb/Areas/Admin/Views/ChungNhan/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2h1bmdOaGFuXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ngoquangdai/Downloads/QLCB/QLCB/Areas/Admin/Views/ChungNhan/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQ2h1bmdOaGFuL0VkaXQuY3NodG1s
+[D:/Works/Freelancer/Customer/travel_qlcb/Areas/Admin/Views/ChungNhan/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2h1bmdOaGFuXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ngoquangdai/Downloads/QLCB/QLCB/Areas/Admin/Views/ChungNhan/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQ2h1bmdOaGFuL0luZGV4LmNzaHRtbA==
+[D:/Works/Freelancer/Customer/travel_qlcb/Areas/Admin/Views/ChungNhan/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2h1bmdOaGFuXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ngoquangdai/Downloads/QLCB/QLCB/Areas/Admin/Views/ChuyenBay/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQ2h1eWVuQmF5L0NyZWF0ZS5jc2h0bWw=
+[D:/Works/Freelancer/Customer/travel_qlcb/Areas/Admin/Views/ChuyenBay/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2h1eWVuQmF5XENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ngoquangdai/Downloads/QLCB/QLCB/Areas/Admin/Views/ChuyenBay/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQ2h1eWVuQmF5L0RlbGV0ZS5jc2h0bWw=
+[D:/Works/Freelancer/Customer/travel_qlcb/Areas/Admin/Views/ChuyenBay/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2h1eWVuQmF5XERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ngoquangdai/Downloads/QLCB/QLCB/Areas/Admin/Views/ChuyenBay/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQ2h1eWVuQmF5L0VkaXQuY3NodG1s
+[D:/Works/Freelancer/Customer/travel_qlcb/Areas/Admin/Views/ChuyenBay/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2h1eWVuQmF5XEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ngoquangdai/Downloads/QLCB/QLCB/Areas/Admin/Views/ChuyenBay/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQ2h1eWVuQmF5L0luZGV4LmNzaHRtbA==
+[D:/Works/Freelancer/Customer/travel_qlcb/Areas/Admin/Views/ChuyenBay/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2h1eWVuQmF5XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ngoquangdai/Downloads/QLCB/QLCB/Areas/Admin/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+[D:/Works/Freelancer/Customer/travel_qlcb/Areas/Admin/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ngoquangdai/Downloads/QLCB/QLCB/Areas/Admin/Views/MayBay/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvTWF5QmF5L0NyZWF0ZS5jc2h0bWw=
+[D:/Works/Freelancer/Customer/travel_qlcb/Areas/Admin/Views/MayBay/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTWF5QmF5XENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ngoquangdai/Downloads/QLCB/QLCB/Areas/Admin/Views/MayBay/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvTWF5QmF5L0VkaXQuY3NodG1s
+[D:/Works/Freelancer/Customer/travel_qlcb/Areas/Admin/Views/MayBay/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTWF5QmF5XEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ngoquangdai/Downloads/QLCB/QLCB/Areas/Admin/Views/MayBay/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvTWF5QmF5L0luZGV4LmNzaHRtbA==
+[D:/Works/Freelancer/Customer/travel_qlcb/Areas/Admin/Views/MayBay/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTWF5QmF5XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ngoquangdai/Downloads/QLCB/QLCB/Areas/Admin/Views/NhanVien/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvTmhhblZpZW4vQ3JlYXRlLmNzaHRtbA==
+[D:/Works/Freelancer/Customer/travel_qlcb/Areas/Admin/Views/NhanVien/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTmhhblZpZW5cQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ngoquangdai/Downloads/QLCB/QLCB/Areas/Admin/Views/NhanVien/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvTmhhblZpZW4vRWRpdC5jc2h0bWw=
+[D:/Works/Freelancer/Customer/travel_qlcb/Areas/Admin/Views/NhanVien/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTmhhblZpZW5cRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ngoquangdai/Downloads/QLCB/QLCB/Areas/Admin/Views/NhanVien/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvTmhhblZpZW4vSW5kZXguY3NodG1s
+[D:/Works/Freelancer/Customer/travel_qlcb/Areas/Admin/Views/NhanVien/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTmhhblZpZW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ngoquangdai/Downloads/QLCB/QLCB/Areas/Admin/Views/PhanCong/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvUGhhbkNvbmcvQ3JlYXRlLmNzaHRtbA==
+[D:/Works/Freelancer/Customer/travel_qlcb/Areas/Admin/Views/PhanCong/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUGhhbkNvbmdcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ngoquangdai/Downloads/QLCB/QLCB/Areas/Admin/Views/PhanCong/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvUGhhbkNvbmcvRWRpdC5jc2h0bWw=
+[D:/Works/Freelancer/Customer/travel_qlcb/Areas/Admin/Views/PhanCong/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUGhhbkNvbmdcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ngoquangdai/Downloads/QLCB/QLCB/Areas/Admin/Views/PhanCong/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvUGhhbkNvbmcvSW5kZXguY3NodG1s
+[D:/Works/Freelancer/Customer/travel_qlcb/Areas/Admin/Views/PhanCong/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUGhhbkNvbmdcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ngoquangdai/Downloads/QLCB/QLCB/Areas/Admin/Views/SanBay/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU2FuQmF5L0NyZWF0ZS5jc2h0bWw=
+[D:/Works/Freelancer/Customer/travel_qlcb/Areas/Admin/Views/SanBay/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2FuQmF5XENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ngoquangdai/Downloads/QLCB/QLCB/Areas/Admin/Views/SanBay/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU2FuQmF5L0VkaXQuY3NodG1s
+[D:/Works/Freelancer/Customer/travel_qlcb/Areas/Admin/Views/SanBay/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2FuQmF5XEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ngoquangdai/Downloads/QLCB/QLCB/Areas/Admin/Views/SanBay/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU2FuQmF5L0luZGV4LmNzaHRtbA==
+[D:/Works/Freelancer/Customer/travel_qlcb/Areas/Admin/Views/SanBay/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2FuQmF5XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ngoquangdai/Downloads/QLCB/QLCB/Areas/Admin/Views/User/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvVXNlci9DcmVhdGUuY3NodG1s
+[D:/Works/Freelancer/Customer/travel_qlcb/Areas/Admin/Views/User/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlclxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ngoquangdai/Downloads/QLCB/QLCB/Areas/Admin/Views/User/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvVXNlci9EZWxldGUuY3NodG1s
+[D:/Works/Freelancer/Customer/travel_qlcb/Areas/Admin/Views/User/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlclxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ngoquangdai/Downloads/QLCB/QLCB/Areas/Admin/Views/User/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvVXNlci9FZGl0LmNzaHRtbA==
+[D:/Works/Freelancer/Customer/travel_qlcb/Areas/Admin/Views/User/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlclxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ngoquangdai/Downloads/QLCB/QLCB/Areas/Admin/Views/User/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvVXNlci9JbmRleC5jc2h0bWw=
+[D:/Works/Freelancer/Customer/travel_qlcb/Areas/Admin/Views/User/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ngoquangdai/Downloads/QLCB/QLCB/Areas/Admin/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[D:/Works/Freelancer/Customer/travel_qlcb/Areas/Admin/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ngoquangdai/Downloads/QLCB/QLCB/Areas/Employee/Views/PhanCong/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvRW1wbG95ZWUvVmlld3MvUGhhbkNvbmcvSW5kZXguY3NodG1s
+[D:/Works/Freelancer/Customer/travel_qlcb/Areas/Employee/Views/PhanCong/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRW1wbG95ZWVcVmlld3NcUGhhbkNvbmdcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ngoquangdai/Downloads/QLCB/QLCB/Areas/Identity/Pages/Account/Login.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9Mb2dpbi5jc2h0bWw=
+[D:/Works/Freelancer/Customer/travel_qlcb/Areas/Identity/Pages/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ngoquangdai/Downloads/QLCB/QLCB/Areas/Identity/Pages/Account/Logout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9Mb2dvdXQuY3NodG1s
+[D:/Works/Freelancer/Customer/travel_qlcb/Areas/Identity/Pages/Account/Logout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ngoquangdai/Downloads/QLCB/QLCB/Areas/Identity/Pages/Account/Register.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9SZWdpc3Rlci5jc2h0bWw=
+[D:/Works/Freelancer/Customer/travel_qlcb/Areas/Identity/Pages/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ngoquangdai/Downloads/QLCB/QLCB/Areas/Identity/Pages/Account/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9fVmlld0ltcG9ydHMuY3NodG1s
+[D:/Works/Freelancer/Customer/travel_qlcb/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ngoquangdai/Downloads/QLCB/QLCB/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
+[D:/Works/Freelancer/Customer/travel_qlcb/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ngoquangdai/Downloads/QLCB/QLCB/Areas/Identity/Pages/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[D:/Works/Freelancer/Customer/travel_qlcb/Areas/Identity/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ngoquangdai/Downloads/QLCB/QLCB/Areas/Identity/Pages/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
+[D:/Works/Freelancer/Customer/travel_qlcb/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ngoquangdai/Downloads/QLCB/QLCB/Views/ChungNhan/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2h1bmdOaGFuL0NyZWF0ZS5jc2h0bWw=
+[D:/Works/Freelancer/Customer/travel_qlcb/Views/ChungNhan/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2h1bmdOaGFuXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ngoquangdai/Downloads/QLCB/QLCB/Views/ChungNhan/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2h1bmdOaGFuL0luZGV4LmNzaHRtbA==
+[D:/Works/Freelancer/Customer/travel_qlcb/Views/ChungNhan/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2h1bmdOaGFuXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ngoquangdai/Downloads/QLCB/QLCB/Views/ChuyenBay/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2h1eWVuQmF5L0NyZWF0ZS5jc2h0bWw=
+[D:/Works/Freelancer/Customer/travel_qlcb/Views/ChuyenBay/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2h1eWVuQmF5XENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ngoquangdai/Downloads/QLCB/QLCB/Views/ChuyenBay/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2h1eWVuQmF5L0luZGV4LmNzaHRtbA==
+[D:/Works/Freelancer/Customer/travel_qlcb/Views/ChuyenBay/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2h1eWVuQmF5XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ngoquangdai/Downloads/QLCB/QLCB/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+[D:/Works/Freelancer/Customer/travel_qlcb/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ngoquangdai/Downloads/QLCB/QLCB/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+[D:/Works/Freelancer/Customer/travel_qlcb/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ngoquangdai/Downloads/QLCB/QLCB/Views/NhanVien/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTmhhblZpZW4vQ3JlYXRlLmNzaHRtbA==
+[D:/Works/Freelancer/Customer/travel_qlcb/Views/NhanVien/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhblZpZW5cQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ngoquangdai/Downloads/QLCB/QLCB/Views/NhanVien/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTmhhblZpZW4vSW5kZXguY3NodG1s
+[D:/Works/Freelancer/Customer/travel_qlcb/Views/NhanVien/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhblZpZW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ngoquangdai/Downloads/QLCB/QLCB/Views/PhanCong/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGhhbkNvbmcvQ3JlYXRlLmNzaHRtbA==
+[D:/Works/Freelancer/Customer/travel_qlcb/Views/PhanCong/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGhhbkNvbmdcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ngoquangdai/Downloads/QLCB/QLCB/Views/PhanCong/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGhhbkNvbmcvSW5kZXguY3NodG1s
+[D:/Works/Freelancer/Customer/travel_qlcb/Views/PhanCong/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGhhbkNvbmdcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ngoquangdai/Downloads/QLCB/QLCB/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+[D:/Works/Freelancer/Customer/travel_qlcb/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ngoquangdai/Downloads/QLCB/QLCB/Views/Shared/_LoginPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19Mb2dpblBhcnRpYWwuY3NodG1s
+[D:/Works/Freelancer/Customer/travel_qlcb/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ngoquangdai/Downloads/QLCB/QLCB/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+[D:/Works/Freelancer/Customer/travel_qlcb/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ngoquangdai/Downloads/QLCB/QLCB/Views/VeBay/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVmVCYXkvQ3JlYXRlLmNzaHRtbA==
+[D:/Works/Freelancer/Customer/travel_qlcb/Views/VeBay/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVCYXlcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ngoquangdai/Downloads/QLCB/QLCB/Views/VeBay/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVmVCYXkvSW5kZXguY3NodG1s
+[D:/Works/Freelancer/Customer/travel_qlcb/Views/VeBay/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVCYXlcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ngoquangdai/Downloads/QLCB/QLCB/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[D:/Works/Freelancer/Customer/travel_qlcb/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ngoquangdai/Downloads/QLCB/QLCB/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+[D:/Works/Freelancer/Customer/travel_qlcb/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ngoquangdai/Downloads/QLCB/QLCB/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-q0r2ah6yha
+[D:/Works/Freelancer/Customer/travel_qlcb/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-1ijukti9rt

@@ -1,26 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ngoquangdai/Downloads/QLCB/QLCB/QLCB.csproj": {}
+    "D:\\Works\\Freelancer\\Customer\\travel_qlcb\\QLCB.csproj": {}
   },
   "projects": {
-    "/Users/ngoquangdai/Downloads/QLCB/QLCB/QLCB.csproj": {
+    "D:\\Works\\Freelancer\\Customer\\travel_qlcb\\QLCB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ngoquangdai/Downloads/QLCB/QLCB/QLCB.csproj",
+        "projectUniqueName": "D:\\Works\\Freelancer\\Customer\\travel_qlcb\\QLCB.csproj",
         "projectName": "QLCB",
-        "projectPath": "/Users/ngoquangdai/Downloads/QLCB/QLCB/QLCB.csproj",
-        "packagesPath": "/Users/ngoquangdai/.nuget/packages/",
-        "outputPath": "/Users/ngoquangdai/Downloads/QLCB/QLCB/obj/",
+        "projectPath": "D:\\Works\\Freelancer\\Customer\\travel_qlcb\\QLCB.csproj",
+        "packagesPath": "C:\\Users\\Jesse\\.nuget\\packages\\",
+        "outputPath": "D:\\Works\\Freelancer\\Customer\\travel_qlcb\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/ngoquangdai/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Jesse\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -94,7 +93,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.406/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

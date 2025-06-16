@@ -1,3 +1,3 @@
 ﻿<Project>
-  <Import Project="../build/QLCB.props" />
+  <Import Project="..\build\QLCB.props" />
 </Project>
