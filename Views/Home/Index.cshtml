@@ -25,20 +25,33 @@
 <form class="row g-3" method="get" asp-controller="Home" asp-action="Index">
     <div class="col-md-4">
         <label class="form-label">Điểm khởi hành</label>
-        <input type="text" class="form-control" name="diemDi" placeholder="TP.HCM">
+        <input type="text" class="form-control" name="diemDi" placeholder="TP.HCM" value="@(ViewData["diemDi"] ?? "")">
     </div>
     <div class="col-md-4">
         <label class="form-label">Điểm đến</label>
-        <input type="text" class="form-control" name="diemDen" placeholder="Hà Nội">
+        <input type="text" class="form-control" name="diemDen" placeholder="Hà Nội" value="@(ViewData["diemDen"] ?? "")">
     </div>
     <div class="col-md-2">
         <label class="form-label">Ngày đi</label>
-        <input type="date" class="form-control" name="ngayDi">
+        <input type="date" class="form-control" name="ngayDi" value="@(ViewData["ngayDi"] ?? "")">
     </div>
     <div class="col-md-2 d-flex align-items-end">
         <button type="submit" class="btn btn-primary w-100">Tìm chuyến</button>
     </div>
 </form>
+@if (TempData["Success"] != null)
+{
+<div class="alert alert-success" role="alert">
+    @TempData["Success"]
+</div>
+}
+
+@if (TempData["Error"] != null)
+{
+<div class="alert alert-danger" role="alert">
+    @TempData["Error"]
+</div>
+}
 
 <!-- Flight List -->
 <div class="container mt-5">
@@ -83,22 +96,32 @@
                             <ul class="list-group">
                                 @foreach (var ve in cb.VeBays)
                                 {
+                                    var daDat = !string.IsNullOrEmpty(ve.MaHanhKhach);
                                     <li class="list-group-item d-flex justify-content-between align-items-center">
                                         <span>
                                             Mã vé: @ve.MaVeBay - Giá: @string.Format("{0:N0}", ve.GiaVe)₫
-                                            @if (!string.IsNullOrEmpty(ve.MaHanhKhach))
+                                            @if (daDat)
                                             {
                                                 <span class="text-danger ms-2">(Đã có người đặt)</span>
                                             }
                                         </span>
 
-                                        <button class="btn btn-primary btn-sm"
-                                                @(!string.IsNullOrEmpty(ve.MaHanhKhach) ? "disabled" : "")>
-                                            Đặt ngay
-                                        </button>
+                                        <form action="/Home/DatVe" method="post">
+                                            @Html.AntiForgeryToken()
+                                            <input type="hidden" name="maVeBay" value="@ve.MaVeBay"/>
+                                            <button type="submit" class="btn btn-primary btn-sm"
+                                                    @(daDat ? "disabled" : "")
+                                                    @if (!User.Identity.IsAuthenticated)
+                                                    {
+                                                        <text>onclick="alert('Vui lòng đăng nhập để đặt vé'); return false;"</text>
+                                                    }>
+                                                Đặt ngay
+                                            </button>
+                                        </form>
                                     </li>
                                 }
                             </ul>
+
                         }
                         else
                         {
@@ -111,35 +134,3 @@
     }
 
 </div>
-
-@section Scripts {
-    <script>
-    $(document).ready(function () {
-        $('.btnDatVe').on('click', function () {
-            const maChuyenBay = $(this).data('mcb');
-            const veBays = $(this).data('ve');
-
-            let html = '';
-            if (veBays.length === 0) {
-                html = '<tr><td colspan="4" class="text-center">Không có vé khả dụng.</td></tr>';
-            } else {
-                veBays.forEach(ve => {
-                    html += `
-                        <tr>
-                            <td>${ve.maVeBay}</td>
-                            <td>${new Date(ve.ngayDatVe).toLocaleDateString()}</td>
-                            <td>${ve.giaVe.toLocaleString()}</td>
-                            <td>
-                              <button class="btn btn-primary btn-sm">Đặt ngay</button>                            
-                            </td>
-                        </tr>
-                    `;
-                });
-            }
-
-            $('#veBayContainer').html(html);
-            $('#modalDatVe').modal('show');
-        });
-    });
-</script>
-}

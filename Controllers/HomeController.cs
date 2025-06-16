@@ -1,6 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
 using QLCB.Models;
 using System.Diagnostics;
+using System.Security.Claims;
+using Microsoft.AspNetCore.Authorization;
 using QLCB.Models.ViewModels;
 
 namespace QLCB.Controllers
@@ -9,7 +11,7 @@ namespace QLCB.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly ApplicationDBContext _context;
-        
+
         public HomeController(ILogger<HomeController> logger, ApplicationDBContext context)
         {
             _logger = logger;
@@ -67,8 +69,48 @@ namespace QLCB.Controllers
                     }).ToList()
             }).ToList();
 
+            ViewData["diemDi"] = diemDi;
+            ViewData["diemDen"] = diemDen;
+            ViewData["ngayDi"] = ngayDi;
             return View(danhSach);
         }
+
+        [Authorize]
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult DatVe(string maVeBay)
+        {
+            var ve = _context.VeBays.FirstOrDefault(v => v.MaVeBay == maVeBay);
+            
+            if (ve == null)
+            {
+                TempData["Error"] = "Vé không tồn tại.";
+                return RedirectToAction("Index");
+            }
+
+            if (!string.IsNullOrEmpty(ve.MaHanhKhach))
+            {
+                TempData["Error"] = "Vé này đã được đặt.";
+                return RedirectToAction("Index");
+            }
+
+            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            if (string.IsNullOrEmpty(userId))
+            {
+                TempData["Error"] = "Không xác định được người dùng.";
+                return RedirectToAction("Index");
+            }
+
+
+            ve.MaHanhKhach = userId;
+            ve.NgayDatVe = DateTime.Now;
+
+            _context.SaveChanges();
+
+            TempData["Success"] = "Đặt vé thành công!";
+            return RedirectToAction("Index");
+        }
+
 
         public IActionResult Privacy()
         {
