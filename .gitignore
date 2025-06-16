@@ -30,6 +30,10 @@
 
 bin
 obj
+bin/
+bin/*
+obj/
+obj/*
 
 Migrations
 !Migrations/.gitignore
