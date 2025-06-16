@@ -16,30 +16,57 @@ namespace QLCB.Controllers
             _context = context;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(string diemDi, string diemDen, DateTime? ngayDi)
         {
-            var danhSach = (from cb in _context.ChuyenBays
+            var query = from cb in _context.ChuyenBays
                 join sbDi in _context.SanBays on cb.MaSanBayDi equals sbDi.MaSanBay
                 join sbDen in _context.SanBays on cb.MaSanBayDen equals sbDen.MaSanBay
-                select new ChuyenBayViewModel
+                select new
                 {
-                    MaChuyenBay = cb.MaChuyenBay,
-                    TenChuyenBay = cb.TenChuyenBay,
-                    ThoiGianKhoiHanh = cb.ThoiGianKhoiHanh,
-                    ThoiGianDen = cb.ThoiGianDen,
-                    SoGhe = cb.SoGhe,
+                    cb,
                     TenSanBayDi = sbDi.TenSanBay,
-                    TenSanBayDen = sbDen.TenSanBay,
-                    VeBays = _context.VeBays
-                        .Where(v => v.MaChuyenBay == cb.MaChuyenBay)
-                        .Select(v => new VeBayViewModel
-                        {
-                            MaVeBay = v.MaVeBay,
-                            NgayDatVe = v.NgayDatVe,
-                            GiaVe = v.GiaVe,
-                            MaHanhKhach = v.MaHanhKhach
-                        }).ToList()
-                }).ToList();
+                    TenSanBayDen = sbDen.TenSanBay
+                };
+
+            /* Lọc theo điểm đi */
+            if (!string.IsNullOrEmpty(diemDi))
+            {
+                query = query.Where(x => x.TenSanBayDi.Contains(diemDi));
+            }
+
+            /* Lọc theo điểm đến */
+            if (!string.IsNullOrEmpty(diemDen))
+            {
+                query = query.Where(x => x.TenSanBayDen.Contains(diemDen));
+            }
+
+            /* Lọc theo ngày đi */
+            if (ngayDi.HasValue)
+            {
+                var ngay = ngayDi.Value.Date;
+                query = query.Where(x => x.cb.ThoiGianKhoiHanh.Date == ngay);
+            }
+
+            var danhSach = query.Select(x => new ChuyenBayViewModel
+            {
+                MaChuyenBay = x.cb.MaChuyenBay,
+                TenChuyenBay = x.cb.TenChuyenBay,
+                ThoiGianKhoiHanh = x.cb.ThoiGianKhoiHanh,
+                ThoiGianDen = x.cb.ThoiGianDen,
+                SoGhe = x.cb.SoGhe,
+                TenSanBayDi = x.TenSanBayDi,
+                TenSanBayDen = x.TenSanBayDen,
+                VeBays = _context.VeBays
+                    .Where(v => v.MaChuyenBay == x.cb.MaChuyenBay)
+                    .Select(v => new VeBayViewModel
+                    {
+                        MaVeBay = v.MaVeBay,
+                        NgayDatVe = v.NgayDatVe,
+                        GiaVe = v.GiaVe,
+                        MaHanhKhach = v.MaHanhKhach
+                    }).ToList()
+            }).ToList();
+
             return View(danhSach);
         }
 

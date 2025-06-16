@@ -22,29 +22,23 @@
 </nav>
 
 <!-- Search Box -->
-<div class="container mt-4">
-    <div class="card shadow-sm">
-        <div class="card-body">
-            <form class="row g-3">
-                <div class="col-md-4">
-                    <label class="form-label">Điểm khởi hành</label>
-                    <input type="text" class="form-control" placeholder="TP.HCM">
-                </div>
-                <div class="col-md-4">
-                    <label class="form-label">Điểm đến</label>
-                    <input type="text" class="form-control" placeholder="Hà Nội">
-                </div>
-                <div class="col-md-2">
-                    <label class="form-label">Ngày đi</label>
-                    <input type="date" class="form-control">
-                </div>
-                <div class="col-md-2 d-flex align-items-end">
-                    <button type="submit" class="btn btn-primary w-100">Tìm chuyến</button>
-                </div>
-            </form>
-        </div>
+<form class="row g-3" method="get" asp-controller="Home" asp-action="Index">
+    <div class="col-md-4">
+        <label class="form-label">Điểm khởi hành</label>
+        <input type="text" class="form-control" name="diemDi" placeholder="TP.HCM">
     </div>
-</div>
+    <div class="col-md-4">
+        <label class="form-label">Điểm đến</label>
+        <input type="text" class="form-control" name="diemDen" placeholder="Hà Nội">
+    </div>
+    <div class="col-md-2">
+        <label class="form-label">Ngày đi</label>
+        <input type="date" class="form-control" name="ngayDi">
+    </div>
+    <div class="col-md-2 d-flex align-items-end">
+        <button type="submit" class="btn btn-primary w-100">Tìm chuyến</button>
+    </div>
+</form>
 
 <!-- Flight List -->
 <div class="container mt-5">
