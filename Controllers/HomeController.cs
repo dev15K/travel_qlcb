@@ -3,6 +3,7 @@ using QLCB.Models;
 using System.Diagnostics;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.EntityFrameworkCore;
 using QLCB.Models.ViewModels;
 
 namespace QLCB.Controllers
@@ -112,6 +113,24 @@ namespace QLCB.Controllers
         }
 
 
+        [Authorize]
+        public IActionResult VeDaDat()
+        {
+            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+
+            if (string.IsNullOrEmpty(userId))
+            {
+                TempData["Error"] = "Không xác định được người dùng.";
+                return RedirectToAction("Index", "Home");
+            }
+
+            var veBays = _context.VeBays
+                .Where(v => v.MaHanhKhach == userId)
+                .ToList();
+
+            return View(veBays);
+        }
+        
         public IActionResult Privacy()
         {
             return View();

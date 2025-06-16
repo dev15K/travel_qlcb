@@ -39,6 +39,9 @@
         <button type="submit" class="btn btn-primary w-100">Tìm chuyến</button>
     </div>
 </form>
+<div class="d-flex justify-content-end mb-2 mt-5">
+    <a href="/Home/VeDaDat" class="btn btn-sm btn-success">Xem vé đã đặt</a>
+</div>
 @if (TempData["Success"] != null)
 {
 <div class="alert alert-success" role="alert">
@@ -52,7 +55,6 @@
     @TempData["Error"]
 </div>
 }
-
 <!-- Flight List -->
 <div class="container mt-5">
     <h4 class="mb-3">Danh sách chuyến bay</h4>

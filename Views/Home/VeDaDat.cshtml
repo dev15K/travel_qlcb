@@ -1,0 +1,36 @@
+@model List<QLCB.Models.VeBay>
+
+@{
+    ViewData["Title"] = "Vé đã đặt";
+}
+
+<h2 class="mb-4">Danh sách vé bạn đã đặt</h2>
+
+@if (!Model.Any())
+{
+    <div class="alert alert-info">Bạn chưa đặt vé nào.</div>
+}
+else
+{
+    <table class="table table-bordered table-striped">
+        <thead class="table-dark">
+        <tr>
+            <th>Mã vé</th>
+            <th>Mã chuyến bay</th>
+            <th>Giá vé</th>
+            <th>Ngày đặt</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var ve in Model)
+        {
+            <tr>
+                <td>@ve.MaVeBay</td>
+                <td>@ve.MaChuyenBay</td>
+                <td>@string.Format("{0:N0}", ve.GiaVe)₫</td>
+                <td>@ve.NgayDatVe.ToString("dd/MM/yyyy")</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}
