@@ -17,8 +17,22 @@ builder.Services.AddControllersWithViews()
     .AddDataAnnotationsLocalization();
 
 // Kết nối database
-builder.Services.AddDbContext<ApplicationDBContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+var databaseProvider = builder.Configuration["DatabaseProvider"];
+
+/* Use MySql */
+if (databaseProvider == "MySql")
+{
+    var connectionString = builder.Configuration.GetConnectionString("MySqlConnection");
+
+    builder.Services.AddDbContext<ApplicationDBContext>(options =>
+        options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
+}
+/* Use SqlServer */
+else
+{
+    builder.Services.AddDbContext<ApplicationDBContext>(options =>
+        options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+}
 
 // Cấu hình Identity
 builder.Services.AddIdentity<IdentityUser, IdentityRole>()
